@@ -55,8 +55,7 @@
     align-items: center;
     height: 59px;
     width: 100%;
-
-  }
+}
 
   .home-link {
     display: flex;
@@ -65,34 +64,160 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: black;
-
-  }
+}
 
   .blog-link { 
       margin-left: auto;
-      
-  }
+}
 
   .blog-link,
   .about-me-link {
     margin-right: 1.5em;
+    font-size: .75rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: black;
     text-transform: uppercase;
-  }
+}
 
   #icon-img {
     height: 23px;
-  }
+}
 
   a {
     text-decoration: none;
-  }
+}
+
+/*all pages--- */
+.blog-one, 
+.blog-two,
+.blog-three,
+.blog-hero-container,
+.text-section-container,
+.profile-hero-container {
+    width: 374px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-hero-date,
+.blog-hero-date {
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.main-hero-title,
+.blog-hero-title,
+.profile-hero-title {
+    font-size: 2rem;
+    line-height: 108%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.main-hero-text,
+.blog-hero-text,
+.profile-hero-text {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    overflow-wrap: break-word;
+}
+
+/*home.html---hero section content styling */
+
+.main-hero-section {
+    background-image: url("./images/halo-hero.png");
+    height: 293px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-hero-container {
+    padding: 0 2em 1em 1em;
+}
+
+/*home.html---blog content */
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+
+}
+
+.blog-one-img, 
+.blog-two-img, 
+.blog-three-img {
+    margin-bottom: .5em;
+}
+
+.blog-one-span, 
+.blog-two-span, 
+.blog-three-span {
+    text-transform: uppercase;
+    font-size: .875rem;
+    line-height: 1.125rem;
+}
+
+.blog-one-title, 
+.blog-two-title, 
+.blog-three-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 108%;
+    margin-top: .2em;
+    margin-bottom: .25em;
+}
+
+.blog-one-text, 
+.blog-two-text, 
+.blog-three-text {
+    font-size: 1rem;
+    line-height: 125%;
+    margin-bottom: 2.5em;
+}
+
+.view-more-blogs {
+    text-decoration: underline;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
 
 
-/*Main content styling */
+/*blog.html---hero section content styling */
 
+.blog-hero-img {
+    height: 191px;
+}
+
+
+/*profile.html---hero section content styling */
+
+.profile-hero-img {
+    height: 182px;
+    width: 182px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+/*blog/profile.html---text section content styling */
+
+.text-section,
+.blog-hero-section,
+.profile-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
