@@ -46,18 +46,14 @@
     overflow-wrap: break-word;
   }
 
-
-
 /* Nav bar styling*/
-
-  .nav-bar {
+.nav-bar {
     display: flex;
     align-items: center;
     height: 59px;
     width: 100%;
 }
-
-  .home-link {
+.home-link {
     display: flex;
     margin-left: 1em;
     gap: .125em;
@@ -65,12 +61,10 @@
     font-weight: 700;
     color: black;
 }
-
-  .blog-link { 
+.blog-link { 
       margin-left: auto;
 }
-
-  .blog-link,
+.blog-link,
   .about-me-link {
     margin-right: 1.5em;
     font-size: .75rem;
@@ -79,12 +73,10 @@
     color: black;
     text-transform: uppercase;
 }
-
-  #icon-img {
+#icon-img {
     height: 23px;
 }
-
-  a {
+a {
     text-decoration: none;
 }
 
@@ -98,13 +90,11 @@
     width: 374px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 .main-hero-date,
 .blog-hero-date {
     text-transform: uppercase;
     font-size: .75rem;
 }
-
 .main-hero-title,
 .blog-hero-title,
 .profile-hero-title {
@@ -113,7 +103,6 @@
     margin-top: .25em;
     margin-bottom: .25em;
 }
-
 .main-hero-text,
 .blog-hero-text,
 .profile-hero-text {
@@ -121,17 +110,14 @@
     line-height: 1.25rem;
     overflow-wrap: break-word;
 }
-
 .text-section-container,
 .text-committed,
 .text-started {
     font-size: 1rem;
 }
-
 .text-section {
     margin-top: 2em;
 }
-
 .text-committed,
 .text-p-one,
 .text-p-two,
@@ -140,48 +126,44 @@
 .text-p-four {
     margin-bottom: 1em;
 }
-
 .recent-posts {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 700;
     margin-bottom: 1.5em;
-    
 }
 /*home.html---hero section content styling */
-
 .main-hero-section {
-    background-image: url("./images/halo-hero.png");
+
     height: 293px;
-    object-fit: cover;
-    background-repeat: no-repeat;
     font-family: 'Source Sans Pro', sans-serif;
     color: #ffffff;
-    display: flex;
-    align-items: flex-end;
 }
-
 .main-hero-container {
-    padding: 0 2em 1em 1em;
+    height: 293px;
+    width: 414px;
+    background-image: url("./images/halo-hero.png");
+    background-repeat: no-repeat;
+    padding: 5em 0 0 1.25em;
+}
+.main-hero-title,
+.main-hero-text {
+    max-width: 374px;
 }
 
 /*home.html---blog content */
-
 .blog-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2em 0;
-
 }
-
 .blog-one-img, 
 .blog-two-img, 
 .blog-three-img {
     margin-bottom: .5em;
 }
-
 .blog-one-span, 
 .blog-two-span, 
 .blog-three-span {
@@ -189,7 +171,6 @@
     font-size: .875rem;
     line-height: 1.125rem;
 }
-
 .blog-one-title, 
 .blog-two-title, 
 .blog-three-title {
@@ -199,7 +180,6 @@
     margin-top: .2em;
     margin-bottom: .25em;
 }
-
 .blog-one-text, 
 .blog-two-text, 
 .blog-three-text {
@@ -207,7 +187,6 @@
     line-height: 125%;
     margin-bottom: 2.5em;
 }
-
 .view-more-blogs {
     text-decoration: underline;
     color: #000000;
@@ -217,24 +196,19 @@
     margin-bottom: .5em;
 }
 
-
 /*blog.html---hero section content styling */
 .blog-hero-title {
     margin-bottom: .5em;
 }
-
 .blog-hero-img {
     height: 191px;
     margin-top: 2em;
 }
-
 .blog-hero-container {
     margin-top: 1em;
 }
 
-
 /*profile.html---hero section content styling */
-
 .profile-hero-img {
     height: 182px;
     width: 182px;
@@ -242,27 +216,21 @@
     border-radius: 50%;
     margin-top: 1.5em;
 }
-
 .profile-hero-title {
     margin: .75em 0 .5em 0;
 }
 
-
-
 /*blog/profile.html---text section content styling */
-
 .text-section,
 .blog-hero-section,
-.profile-hero-section {
+.profile-hero-section,
+.main-hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
 /* Footer styling*/
-
 footer {
     height: 105px;
     width: 100%;
@@ -274,13 +242,51 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: .75rem;
 }
-
 .footer-title {
     color: #ECECEC;
     font-weight: 700;
 }
-
-
 .copyright {
     color: #d7d7d7;
 }
+
+/* media queries */
+
+@media (min-width: 768px ) {
+
+    /*home.html page */
+
+    .main-hero-section {
+        height: 488px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-hero-container {
+        width: 1085px;
+        height: 100%;
+        background-image: url("./images/blog-image-hero.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 11em;
+        padding-bottom: 3em;
+        
+    }
+    .main-hero-date {
+        
+        
+    }
+    .main-hero-title {
+        height: 43px;
+        max-width: 657px;
+        
+    }
+    .main-hero-text {
+        max-width: 615px;
+        height: 60px;
+        
+    }
+   
+    
+} 
